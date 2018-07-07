@@ -25,7 +25,7 @@ class Confessions_moi extends MY_Controller {
 	{
 		$data = $this->session->userdata('pageinfo');
 		$id = $this->input->post('id');
-		//$this->cfs->del_cfs($id);
+		$this->cfs->del_cfs($id);
 		$mess = $this->input->post('mess');
 		
 		
@@ -46,7 +46,7 @@ class Confessions_moi extends MY_Controller {
 
 		$pages = $this->facebook->request('GET',$this->config->item('page_id').'?fields=access_token');
 		print_r($pages);
-		//$upload = $this->facebook->request('POST',$this->config->item('page_id').'/feed',array('message' => $newmess),$pages['access_token']);
+		$upload = $this->facebook->request('POST',$this->config->item('page_id').'/feed',array('message' => $newmess),$pages['access_token']);
 	}
 
 	public function xoa_cfs()
