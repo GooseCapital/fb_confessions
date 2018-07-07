@@ -12,3 +12,4 @@
 	'password' => '',
 	'database' => 'cfs',
 </code>
+<h2> Thêm Database tên cfs</h2>
