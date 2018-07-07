@@ -12,7 +12,7 @@
 	'password' => '',
 	'database' => 'cfs',
 </code>
-<h2>Sửa lỗi mkdir(): invalid path  /h2>
+<h2>Sửa lỗi mkdir(): invalid path  </h2>
 Vào application/config/config.php
 <code> $config['sess_save_path'] = NULL;</code>
 Thay bằng <code>$config['sess_save_path'] = sys_get_temp_dir();</code>
