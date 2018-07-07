@@ -24,11 +24,11 @@
 	                <input type="text" class="form-control" placeholder="Email" id="email" name="email">
 
 	                <input type="text" class="form-control" placeholder="Biệt danh" id="nickname">
-
+	                
 	            </div>
-	           <p id="email_result"></p>
-	             <button type="button" id='add_admin' class="btn btn-primary">Chấp nhận</button>
-	     
+	           	<p><label></label></p>
+	           	<button type="button" id="add_admin" class="btn btn-primary" disabled>Chấp nhận</button>
+	     		<p id="result"></p>
 	        </div>
 
 	    </div>

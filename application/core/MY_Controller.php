@@ -20,12 +20,9 @@ class MY_Controller extends CI_Controller {
             {
             $this->check_log();
             break;
-            }
- 
-            
+            }            
             default:
             {
-                
                 break;
             }
         }
@@ -34,9 +31,12 @@ class MY_Controller extends CI_Controller {
     function check_log(){
     	$controller = $this->uri->segment(2);
         $controller = strtolower($controller);
-    	if((!$this->facebook->is_authenticated()) and ($controller != 'login') )
-        {
-            redirect(base_url('admin/login'),'refresh');
+         	if((!$this->facebook->is_authenticated()) and ($controller != 'login') )
+            {
+                redirect(base_url('admin/login'),'refresh');
+            }
+           
         }
-    }
+
+    
 }

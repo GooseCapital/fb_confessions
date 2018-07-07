@@ -5,4 +5,4 @@
 			<img src="<?php echo public_helper('image');?>/facebook-login.png">
 		</div>
 	</a>
-<?php } else {redirect(base_url('admin/index'),'refresh');} ?> 
+<?php } else {redirect(base_url('admin/trang_chu'),'refresh');} ?> 

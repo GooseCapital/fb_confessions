@@ -12,7 +12,7 @@
             <i class="ion ion-android-person d-lg-none"></i>
             <div class="d-sm-none d-lg-inline-block"><?php echo $name; ?></div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a href="/admin/logout" class="dropdown-item has-icon">
+              <a href="/admin/login/logout" class="dropdown-item has-icon">
                 <i class="ion ion-log-out"></i> Logout
               </a>
             </div>
@@ -22,7 +22,7 @@
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="/admin/index">THPT BAC LIEU CFS</a>
+            <a href="/admin/trang_chu">THPT BAC LIEU CFS</a>
           </div>
           <div class="sidebar-user">
             <div class="sidebar-user-picture">
@@ -38,17 +38,17 @@
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li>
-              <a href="/admin/trangchu"><i class="ion ion-speedometer"></i><span>Dashboard</span></a>
+              <a href="/admin/trang_chu"><i class="ion ion-speedometer"></i><span>Dashboard</span></a>
             </li>
 
             <li class="menu-header">Components</li>
             
             
             <li>
-              <a href="/admin/new_cfs"><i class="ion ion-clipboard"></i><span>Confessions mới</span></a>
+              <a href="/admin/confessions_moi"><i class="ion ion-clipboard"></i><span>Confessions mới</span></a>
             </li>
             <li>
-              <a href="/admin/add_new"><i class="ion ion-plus"></i><span>Thêm admin</span></a>
+              <a href="/admin/them_admin_moi"><i class="ion ion-plus"></i><span>Thêm admin</span></a>
             </li>
          </ul>
          

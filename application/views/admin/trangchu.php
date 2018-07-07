@@ -83,18 +83,18 @@
                         <tr>
                           <th>Tên</th>
                           <th>Email</th>
-                          <th>Chức vụ</th>
+                          
                           <th>Biệt danh</th>
-                          <th>Id</th>
+                         
                           <th>Số cfs đã đăng</th>
                         </tr>
                        	<?php foreach($members as $m): ?>
                         <tr>
                           <td><?php echo $m->name; ?></td>
                           <td><?php echo $m->email; ?></td>
-                          <td><?php echo $m->chucvu; ?></td>
+                         
                           <td><?php echo $m->nickname; ?></td>
-                          <td><?php echo $m->id_fb; ?></td>
+                        
                           <td><?php echo $m->so_cfs; ?></td>
                         </tr>
                         <?php endforeach; ?>

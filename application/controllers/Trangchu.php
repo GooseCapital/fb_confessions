@@ -5,8 +5,8 @@ class Trangchu extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Other');
-		$this->load->model('Count_cfs');
+		$this->load->model('cfs');
+
 	}
 	public function index()
 	{
@@ -14,7 +14,7 @@ class Trangchu extends CI_Controller {
 		$this->load->view('trangchu', $data);
 		$mess = $this->input->post('mess');
 		if(!empty($mess)){
-			$this->Other->up_cfs_to_db($mess);
+			$this->cfs->up_cfs_to_db($mess);
 	
 		}
         
