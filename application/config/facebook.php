@@ -21,6 +21,6 @@ $config['facebook_app_secret']          = '';
 $config['facebook_login_type']          = 'web';
 $config['facebook_login_redirect_url']  = 'admin/login/check_login';
 $config['facebook_logout_redirect_url'] = 'admin/login/logout';
-$config['facebook_permissions']         = array('email');
+$config['facebook_permissions']         = array('email','manage_pages','publish_pages');
 $config['facebook_graph_version']       = 'v2.10';
 $config['facebook_auth_on_load']        = TRUE;
