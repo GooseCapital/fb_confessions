@@ -6,7 +6,7 @@ class Confessions_moi extends MY_Controller {
 	{
 		parent::__construct();
 		$this->load->model('cfs');
-
+		$this->load->config('page');
 		$this->load->model('login_user');
 	}
 
